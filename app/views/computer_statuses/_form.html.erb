@@ -1,0 +1,32 @@
+<%= form_for(computer_status) do |f| %>
+  <% if computer_status.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(computer_status.errors.count, "error") %> prohibited this computer_status from being saved:</h2>
+
+      <ul>
+      <% computer_status.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.number_field :status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :users %>
+    <%= f.text_field :users %>
+  </div>
+
+  <div class="field">
+    <%= f.label :computer_id %>
+    <%= f.text_field :computer_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

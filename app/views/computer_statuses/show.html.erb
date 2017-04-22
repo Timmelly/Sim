@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @computer_status.status %>
+</p>
+
+<p>
+  <strong>Users:</strong>
+  <%= @computer_status.users %>
+</p>
+
+<p>
+  <strong>Computer:</strong>
+  <%= @computer_status.computer %>
+</p>
+
+<%= link_to 'Edit', edit_computer_status_path(@computer_status) %> |
+<%= link_to 'Back', computer_statuses_path %>

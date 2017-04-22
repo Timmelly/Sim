@@ -1,0 +1,1 @@
+json.array! @computer_statuses, partial: 'computer_statuses/computer_status', as: :computer_status

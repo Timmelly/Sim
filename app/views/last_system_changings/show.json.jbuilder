@@ -1,0 +1,1 @@
+json.partial! "last_system_changings/last_system_changing", last_system_changing: @last_system_changing

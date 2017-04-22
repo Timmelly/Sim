@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @token.token %>
+</p>
+
+<p>
+  <strong>Date end:</strong>
+  <%= @token.date_end %>
+</p>
+
+<p>
+  <strong>Api action:</strong>
+  <%= @token.api_action %>
+</p>
+
+<%= link_to 'Edit', edit_token_path(@token) %> |
+<%= link_to 'Back', tokens_path %>

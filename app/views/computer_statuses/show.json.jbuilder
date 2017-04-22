@@ -1,0 +1,1 @@
+json.partial! "computer_statuses/computer_status", computer_status: @computer_status

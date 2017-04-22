@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  token: MyString
+  date_end: 2017-01-14
+  api_action: MyString
+
+two:
+  token: MyString
+  date_end: 2017-01-14
+  api_action: MyString

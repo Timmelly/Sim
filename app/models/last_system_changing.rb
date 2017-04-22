@@ -1,0 +1,2 @@
+class LastSystemChanging < ApplicationRecord
+end

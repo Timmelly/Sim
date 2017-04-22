@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Last System Changings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Changing date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @last_system_changings.each do |last_system_changing| %>
+      <tr>
+        <td><%= last_system_changing.changing_date %></td>
+        <td><%= link_to 'Show', last_system_changing %></td>
+        <td><%= link_to 'Edit', edit_last_system_changing_path(last_system_changing) %></td>
+        <td><%= link_to 'Destroy', last_system_changing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Last System Changing', new_last_system_changing_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Computer Statuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Users</th>
+      <th>Computer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @computer_statuses.each do |computer_status| %>
+      <tr>
+        <td><%= computer_status.status %></td>
+        <td><%= computer_status.users %></td>
+        <td><%= computer_status.computer.ip %></td>
+        <td><%= link_to 'Show', computer_status %></td>
+        <td><%= link_to 'Edit', edit_computer_status_path(computer_status) %></td>
+        <td><%= link_to 'Destroy', computer_status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Computer Status', new_computer_status_path %>
